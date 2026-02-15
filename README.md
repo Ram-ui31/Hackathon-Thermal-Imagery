@@ -1,1 +1,4 @@
 # Hackathon-Thermal-Imagery
+Deep Thermal Sharpening: Guided Super-Resolution for Landsat-8
+
+This project implements a guided super-resolution framework to upscale Landsat-8 Thermal Infrared Sensor (TIRS) data from 100m to 30m resolution. Utilizing the SSL4EO-L benchmark dataset, we developed a deep learning architecture that leverages the high-frequency spatial details of the 30m OLI (Optical) bands to sharpen thermal heat maps. Key technical hurdles, including 16-bit Top-of-Atmosphere (TOA) normalization and gradient explosion, were resolved through robust percentile-based scaling. The final model achieves a validation PSNR of 14.51 dB and demonstrates a 10x improvement in Mean Absolute Error (MAE) through post-prediction linear bias correction, ensuring the output remains physically accurate for applications in urban heat island monitoring and precision agriculture.
